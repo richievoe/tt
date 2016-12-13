@@ -1,10 +1,6 @@
-\#\#\# 处理dataFrame数据
-
-
+### 处理dataFrame数据
 
 问题：
-
-
 
 \`\`\` python
 
@@ -14,17 +10,11 @@ df = pd.DataFrame\({'$a': \[1\], '$b': \[1\], '$c': \[1\], '$d': \[1\], '$e': \[
 
 \`\`\`
 
-
-
 解决办法：
-
-
 
 方法一：
 
-
-
-\`\`\` python
+\`\`\`  python
 
 \# ①暴力
 
@@ -40,11 +30,7 @@ df.columns = df.columns.map\(lambda x:x\[1:\]\)
 
 \`\`\`
 
-
-
 方法二：
-
-
 
 \`\`\`python
 
@@ -58,30 +44,17 @@ df.rename\(columns=lambda x:x.replace\('$',''\), inplace=True\)
 
 \`\`\`
 
+a
 
+* \[ \] a task list item
 
+* \[ \] list syntax required
 
+* \[ \] normal \*\*formatting\*\*, @mentions, \#1234 refs
 
+* \[ \] incomplete
 
-
-a 
-
-
-
-- \[ \] a task list item
-
-- \[ \] list syntax required
-
-- \[ \] normal \*\*formatting\*\*, @mentions, \#1234 refs
-
-- \[ \] incomplete
-
-- \[x\] completed
-
-
-
-
-
+* \[x\] completed
 
 
 \| taaa \| aaa  \| aaa  \|
@@ -94,17 +67,7 @@ a
 
 \|  5   \|  5   \|  5   \|
 
-
-
-
-
-
-
 \[^footnote\]: Here is the \*text\* of the \*\*footnote\*\*.
 
-
-
-\[Google\]: http://google.com/
-
-
+\[Google\]: [http://google.com/](http://google.com/)
 
